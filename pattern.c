@@ -34,3 +34,39 @@ int main() {
     }
 	return 0;
 }
+
+//output
+4444
+4414
+4424
+4434
+4444
+
+//program
+#include <stdio.h>
+
+int main()
+{
+    int row,count=1;
+    
+    scanf("%d",&row);
+    for(int i=1;i<=row+1;i++)
+    {
+        
+        for(int j=1;j<=row;j++)
+        {
+            if(j==row-1 && i>1)
+            {
+                printf("%d",count);
+                count++;
+            }
+            else
+            {
+                printf("%d",row);
+            }
+        }
+        printf("\n");
+            
+    }
+    return 0;
+}
